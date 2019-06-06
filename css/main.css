@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.previous, .next{
+    position: absolute;
+    top: 50%;
+}
+.previous{
+    left: 30px;
+    
+}
+.next{
+    right: 30px;
+}
+.slider ul{
+    display: flex;
+    width: 400%;
+    transition: margin, 1s;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider ul img{
+    width: 100%;
+}
+.balls{
+    display: flex;
+    justify-content: center;
+}
+.balls li{
+    background: #DDD;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    transition: background, 1s;
+}
